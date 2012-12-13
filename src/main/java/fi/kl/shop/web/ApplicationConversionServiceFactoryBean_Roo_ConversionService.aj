@@ -22,7 +22,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public Converter<User, String> ApplicationConversionServiceFactoryBean.getUserToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<fi.kl.shop.domain.User, java.lang.String>() {
             public String convert(User user) {
-                return new StringBuilder().append(user.getUsername()).append(' ').append(user.getAddress()).toString();
+                return new StringBuilder().append(user.getUsername()).append(' ').append(user.getAddress()).append(' ').append(user.getBirthday()).toString();
             }
         };
     }
