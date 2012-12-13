@@ -1,0 +1,28 @@
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-12-13 21:30:51
+project --topLevelPackage fi.kl.shop
+mongo setup
+entity mongo --class ~.domain.User --testAutomatically 
+field string --fieldName username --notNull 
+field string --fieldName address --notNull 
+help repository mongo 
+hint repository mongo 
+hint
+hint repository
+hint topics
+hint general
+hint entities
+hint
+hint web mvc
+web mvc setup
+hint
+hin
+hint
+hint web mvc
+web mvc all --package ~.web
+exit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-12-13 21:36:38
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-12-13 21:37:29
+repository mongo --interface ~.repository.UserRepository --entity ~.domain.User
+service --interface ~.service.UserService --entity ~.domain.User
+exit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-12-13 21:38:43
