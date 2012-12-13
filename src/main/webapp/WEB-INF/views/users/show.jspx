@@ -5,5 +5,6 @@
     <page:show id="ps_fi_kl_shop_domain_User" object="${user}" path="/users" z="TLTP+yMN8lAKDQ7G7USIWSoXGaA=">
         <field:display field="username" id="s_fi_kl_shop_domain_User_username" object="${user}" z="G2warQ2Zzmd5doXrPcgl3JLEdVY="/>
         <field:display field="address" id="s_fi_kl_shop_domain_User_address" object="${user}" z="Mn973m9f2RFfIptfZqAyNVa14tg="/>
+        <field:display date="true" dateTimePattern="${user_birthday_date_format}" field="birthday" id="s_fi_kl_shop_domain_User_birthday" object="${user}" z="crBkpcusYSNbfu5P67nXs9MwcNE="/>
     </page:show>
 </div>
