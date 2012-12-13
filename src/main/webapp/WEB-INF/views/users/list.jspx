@@ -6,6 +6,7 @@
         <table:table data="${users}" id="l_fi_kl_shop_domain_User" path="/users" z="S1AV21QaHPcfiDyNDIDg+62c9DE=">
             <table:column id="c_fi_kl_shop_domain_User_username" property="username" z="Z4L/PB+SWh5dSaM7jVX9L3+LCco="/>
             <table:column id="c_fi_kl_shop_domain_User_address" property="address" z="x8sUkLKyNaufGkAUsmrsfY8uB6M="/>
+            <table:column date="true" dateTimePattern="${user_birthday_date_format}" id="c_fi_kl_shop_domain_User_birthday" property="birthday" z="YZqL2lmty9+IzBvKNVFKp20iMkw="/>
         </table:table>
     </page:list>
 </div>
