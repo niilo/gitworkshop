@@ -4,6 +4,7 @@
 package fi.kl.shop.domain;
 
 import fi.kl.shop.domain.User;
+import java.util.Date;
 
 privileged aspect User_Roo_JavaBean {
     
@@ -21,6 +22,14 @@ privileged aspect User_Roo_JavaBean {
     
     public void User.setAddress(String address) {
         this.address = address;
+    }
+    
+    public Date User.getBirthday() {
+        return this.birthday;
+    }
+    
+    public void User.setBirthday(Date birthday) {
+        this.birthday = birthday;
     }
     
 }

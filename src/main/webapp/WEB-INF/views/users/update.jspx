@@ -5,5 +5,6 @@
     <form:update id="fu_fi_kl_shop_domain_User" modelAttribute="user" path="/users" versionField="none" z="Br3k5llb/33TudoQakL0BNPWBsM=">
         <field:input field="username" id="c_fi_kl_shop_domain_User_username" required="true" z="lqf6k7448HhB21vPYijWOdJMhvQ="/>
         <field:input field="address" id="c_fi_kl_shop_domain_User_address" required="true" z="Pvm20oqyIBrHu4g7tZ/cWL1dpYA="/>
+        <field:datetime dateTimePattern="${user_birthday_date_format}" field="birthday" id="c_fi_kl_shop_domain_User_birthday" z="HYOfG460NWwNjL5RZbq4MHVps9w="/>
     </form:update>
 </div>

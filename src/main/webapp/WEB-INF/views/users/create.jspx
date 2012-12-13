@@ -5,6 +5,7 @@
     <form:create id="fc_fi_kl_shop_domain_User" modelAttribute="user" path="/users" render="${empty dependencies}" z="ab9cuLIoaXo8/xawhn7ZK3CiPWU=">
         <field:input field="username" id="c_fi_kl_shop_domain_User_username" required="true" z="lqf6k7448HhB21vPYijWOdJMhvQ="/>
         <field:input field="address" id="c_fi_kl_shop_domain_User_address" required="true" z="Pvm20oqyIBrHu4g7tZ/cWL1dpYA="/>
+        <field:datetime dateTimePattern="${user_birthday_date_format}" field="birthday" id="c_fi_kl_shop_domain_User_birthday" z="HYOfG460NWwNjL5RZbq4MHVps9w="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_fi_kl_shop_domain_User" render="${not empty dependencies}" z="2o8viN6HcAQjEBE2WGsX41A3KM0="/>
 </div>

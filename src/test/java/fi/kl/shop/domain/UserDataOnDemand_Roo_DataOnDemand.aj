@@ -9,6 +9,9 @@ import fi.kl.shop.service.UserService;
 import java.math.BigInteger;
 import java.security.SecureRandom;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
@@ -31,6 +34,7 @@ privileged aspect UserDataOnDemand_Roo_DataOnDemand {
     public User UserDataOnDemand.getNewTransientUser(int index) {
         User obj = new User();
         setAddress(obj, index);
+        setBirthday(obj, index);
         setUsername(obj, index);
         return obj;
     }
@@ -38,6 +42,11 @@ privileged aspect UserDataOnDemand_Roo_DataOnDemand {
     public void UserDataOnDemand.setAddress(User obj, int index) {
         String address = "address_" + index;
         obj.setAddress(address);
+    }
+    
+    public void UserDataOnDemand.setBirthday(User obj, int index) {
+        Date birthday = new GregorianCalendar(Calendar.getInstance().get(Calendar.YEAR), Calendar.getInstance().get(Calendar.MONTH), Calendar.getInstance().get(Calendar.DAY_OF_MONTH), Calendar.getInstance().get(Calendar.HOUR_OF_DAY), Calendar.getInstance().get(Calendar.MINUTE), Calendar.getInstance().get(Calendar.SECOND) + new Double(Math.random() * 1000).intValue()).getTime();
+        obj.setBirthday(birthday);
     }
     
     public void UserDataOnDemand.setUsername(User obj, int index) {
