@@ -26,6 +26,24 @@ repository mongo --interface ~.repository.UserRepository --entity ~.domain.User
 service --interface ~.service.UserService --entity ~.domain.User
 exit
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-12-13 21:38:43
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-12-13 21:51:05
+web mvc json all
+web mvc json all --package ~.json
+web mvc json all --package fi.kl.shop.web
+web mvc json all
+hint web mvc
+hint web mvc json
+hint web
+hint web mvc
+hint
+hint logging
+logging setup --level WARN
+perform tests
+hint
+dependency add --groupId joda-time --artifactId joda-time --version 2.1
+perform tests
+exit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-12-13 21:58:08
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-12-13 21:59:16
 // [failed] web mvc json all 
 exit
