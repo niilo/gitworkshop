@@ -26,3 +26,7 @@ repository mongo --interface ~.repository.UserRepository --entity ~.domain.User
 service --interface ~.service.UserService --entity ~.domain.User
 exit
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-12-13 21:38:43
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-12-13 21:42:05
+dependency add --groupId com.google.guava --artifactId guava --version 13.0.1
+exit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-12-13 21:43:20
